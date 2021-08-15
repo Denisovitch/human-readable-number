@@ -62,8 +62,9 @@ module.exports = function toReadable (number) {
             if (number > 100 && number % 100 > 0) {
                 out = out;
             }
-            out = out + numToWords(parseInt(number % 100));
+            out = out + numToWords(parseInt(number % 100), "");
         }
     }
     return out;    
 }
+

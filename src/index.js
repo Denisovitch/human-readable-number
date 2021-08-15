@@ -63,6 +63,7 @@ module.exports = function toReadable (number) {
                 out = out;
             }
             out = out + numToWords(parseInt(number % 100), "");
+            out = out.trimEnd(); //remove whitespace from the end of a string
         }
     }
     return out;    
